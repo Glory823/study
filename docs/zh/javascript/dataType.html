@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数据类型 | 前端知识点总结</title>
+    <meta name="description" content="任何不能够给你快乐的编程都是耍流氓">
+    <link rel="icon" href="/study/logo.png">
+  <link rel="manifest" href="/study/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/study/icons/apple-touch-icon-152x152.png">
+  <link rel="mask-icon" href="/study/icons/safari-pinned-tab.svg" color="#3eaf7c">
+  <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/study/assets/css/styles.032c6679.css" as="style"><link rel="preload" href="/study/assets/js/app.032c6679.js" as="script"><link rel="preload" href="/study/assets/js/40.9f659595.js" as="script"><link rel="prefetch" href="/study/assets/css/1.styles.ed717d51.css"><link rel="prefetch" href="/study/assets/css/2.styles.fe596e4e.css"><link rel="prefetch" href="/study/assets/css/3.styles.7f063d4c.css"><link rel="prefetch" href="/study/assets/css/4.styles.824217d6.css"><link rel="prefetch" href="/study/assets/css/5.styles.94e4347f.css"><link rel="prefetch" href="/study/assets/css/6.styles.aa2f71e1.css"><link rel="prefetch" href="/study/assets/css/7.styles.ec4c44e3.css"><link rel="prefetch" href="/study/assets/js/1.ed717d51.js"><link rel="prefetch" href="/study/assets/js/10.936c807f.js"><link rel="prefetch" href="/study/assets/js/11.0d3da56a.js"><link rel="prefetch" href="/study/assets/js/12.9747e293.js"><link rel="prefetch" href="/study/assets/js/13.3b79a815.js"><link rel="prefetch" href="/study/assets/js/14.ccab296c.js"><link rel="prefetch" href="/study/assets/js/15.3efa3cb4.js"><link rel="prefetch" href="/study/assets/js/16.28710602.js"><link rel="prefetch" href="/study/assets/js/17.7c846bdf.js"><link rel="prefetch" href="/study/assets/js/18.89604b30.js"><link rel="prefetch" href="/study/assets/js/19.e5a9eb1b.js"><link rel="prefetch" href="/study/assets/js/2.fe596e4e.js"><link rel="prefetch" href="/study/assets/js/20.df38e1fa.js"><link rel="prefetch" href="/study/assets/js/21.8ff39490.js"><link rel="prefetch" href="/study/assets/js/22.4b9a19c1.js"><link rel="prefetch" href="/study/assets/js/23.a0901d1f.js"><link rel="prefetch" href="/study/assets/js/24.97128977.js"><link rel="prefetch" href="/study/assets/js/25.dfdbd4e3.js"><link rel="prefetch" href="/study/assets/js/26.b3e4f970.js"><link rel="prefetch" href="/study/assets/js/27.a53beb2b.js"><link rel="prefetch" href="/study/assets/js/28.b0e56add.js"><link rel="prefetch" href="/study/assets/js/29.9a1e313c.js"><link rel="prefetch" href="/study/assets/js/3.7f063d4c.js"><link rel="prefetch" href="/study/assets/js/30.988ad2ef.js"><link rel="prefetch" href="/study/assets/js/31.4650d7c2.js"><link rel="prefetch" href="/study/assets/js/32.9d0cd816.js"><link rel="prefetch" href="/study/assets/js/33.2034aa63.js"><link rel="prefetch" href="/study/assets/js/34.9e8dc05a.js"><link rel="prefetch" href="/study/assets/js/35.e0e2c9a9.js"><link rel="prefetch" href="/study/assets/js/36.623e52e7.js"><link rel="prefetch" href="/study/assets/js/37.2600ecc5.js"><link rel="prefetch" href="/study/assets/js/38.8adee7a9.js"><link rel="prefetch" href="/study/assets/js/39.3949fc00.js"><link rel="prefetch" href="/study/assets/js/4.824217d6.js"><link rel="prefetch" href="/study/assets/js/41.4b9d6a86.js"><link rel="prefetch" href="/study/assets/js/42.3c2a01b1.js"><link rel="prefetch" href="/study/assets/js/43.7f63c9a6.js"><link rel="prefetch" href="/study/assets/js/44.7c823fce.js"><link rel="prefetch" href="/study/assets/js/45.1f7e0b4a.js"><link rel="prefetch" href="/study/assets/js/46.86b73576.js"><link rel="prefetch" href="/study/assets/js/47.0c9a6597.js"><link rel="prefetch" href="/study/assets/js/48.50ca0610.js"><link rel="prefetch" href="/study/assets/js/49.a8903407.js"><link rel="prefetch" href="/study/assets/js/5.94e4347f.js"><link rel="prefetch" href="/study/assets/js/50.cd310f3c.js"><link rel="prefetch" href="/study/assets/js/51.125d4f2e.js"><link rel="prefetch" href="/study/assets/js/52.98737355.js"><link rel="prefetch" href="/study/assets/js/53.051bcfec.js"><link rel="prefetch" href="/study/assets/js/54.d57d36ae.js"><link rel="prefetch" href="/study/assets/js/55.221b42b4.js"><link rel="prefetch" href="/study/assets/js/56.1711d025.js"><link rel="prefetch" href="/study/assets/js/57.03247dee.js"><link rel="prefetch" href="/study/assets/js/58.d4851c4e.js"><link rel="prefetch" href="/study/assets/js/59.bc1a3ef4.js"><link rel="prefetch" href="/study/assets/js/6.aa2f71e1.js"><link rel="prefetch" href="/study/assets/js/60.9bf09b87.js"><link rel="prefetch" href="/study/assets/js/61.50a616bb.js"><link rel="prefetch" href="/study/assets/js/62.06571683.js"><link rel="prefetch" href="/study/assets/js/63.3ff84a20.js"><link rel="prefetch" href="/study/assets/js/64.d114be12.js"><link rel="prefetch" href="/study/assets/js/65.2f0205bc.js"><link rel="prefetch" href="/study/assets/js/66.21c47541.js"><link rel="prefetch" href="/study/assets/js/67.20cec91d.js"><link rel="prefetch" href="/study/assets/js/68.a4ac124f.js"><link rel="prefetch" href="/study/assets/js/69.8a1b0d2d.js"><link rel="prefetch" href="/study/assets/js/7.ec4c44e3.js"><link rel="prefetch" href="/study/assets/js/70.4666f1c3.js"><link rel="prefetch" href="/study/assets/js/71.230c693e.js"><link rel="prefetch" href="/study/assets/js/72.0f705232.js"><link rel="prefetch" href="/study/assets/js/73.2d183987.js"><link rel="prefetch" href="/study/assets/js/74.bbd6a15b.js"><link rel="prefetch" href="/study/assets/js/75.ca6d74d6.js"><link rel="prefetch" href="/study/assets/js/76.bb40676f.js"><link rel="prefetch" href="/study/assets/js/77.495efa50.js"><link rel="prefetch" href="/study/assets/js/78.b85eebca.js"><link rel="prefetch" href="/study/assets/js/79.cdb5f692.js"><link rel="prefetch" href="/study/assets/js/8.a00a82e4.js"><link rel="prefetch" href="/study/assets/js/80.3507f3f6.js"><link rel="prefetch" href="/study/assets/js/81.dc7f1a4d.js"><link rel="prefetch" href="/study/assets/js/82.698b6b8c.js"><link rel="prefetch" href="/study/assets/js/83.40a4e4d7.js"><link rel="prefetch" href="/study/assets/js/84.c93b97a8.js"><link rel="prefetch" href="/study/assets/js/85.df3ab095.js"><link rel="prefetch" href="/study/assets/js/86.ed670afd.js"><link rel="prefetch" href="/study/assets/js/87.d6450447.js"><link rel="prefetch" href="/study/assets/js/88.c29829a5.js"><link rel="prefetch" href="/study/assets/js/89.0887d1e1.js"><link rel="prefetch" href="/study/assets/js/9.e616f3ce.js">
+    <link rel="stylesheet" href="/study/assets/css/styles.032c6679.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/study/" class="home-link router-link-active"><!----> <span class="site-name">前端知识点总结</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/study/zh/standard/Start.html" class="nav-link">快速搭建开发环境</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">算法</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/zh/algorithm/Charpter4.html" class="nav-link">编程基本功</a></li><li class="dropdown-item"><!----> <a href="/study/zh/algorithm/Charpter5.html" class="nav-link">数学趣题(一)</a></li><li class="dropdown-item"><!----> <a href="/study/zh/algorithm/Charpter6.html" class="nav-link">数学趣题(二)</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">项目相关</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/zh/standard/Standard.html" class="nav-link">前端规范</a></li><li class="dropdown-item"><!----> <a href="/study/zh/standard/Project.html" class="nav-link">项目流程</a></li><li class="dropdown-item"><!----> <a href="/study/zh/standard/Cooperation.html" class="nav-link">前后端交互</a></li><li class="dropdown-item"><!----> <a href="/study/zh/standard/Compatibility.html" class="nav-link">移动端兼容问题</a></li><li class="dropdown-item"><!----> <a href="/study/zh/standard/Improve.html" class="nav-link">项目优化</a></li><li class="dropdown-item"><!----> <a href="/study/zh/standard/Cache.html" class="nav-link">浏览器缓存</a></li><li class="dropdown-item"><!----> <a href="/study/zh/standard/Spa.html" class="nav-link">单页面应用</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">知名公司面试题</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/zh/interview/index.html" class="nav-link">面试必看</a></li><li class="dropdown-item"><!----> <a href="/study/zh/interview/ali.html" class="nav-link">阿里巴巴</a></li><li class="dropdown-item"><!----> <a href="/study/zh/interview/longhu.html" class="nav-link">龙湖地产</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">知识点笔记</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/zh/interface/Mind.html" class="nav-link">在线思维导图</a></li><li class="dropdown-item"><!----> <a href="/study/zh/javascript/" class="nav-link router-link-active">JavaScript</a></li><li class="dropdown-item"><!----> <a href="/study/zh/vue/" class="nav-link">Vue</a></li><li class="dropdown-item"><!----> <a href="/study/zh/react/" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/study/zh/miniapp/" class="nav-link">小程序</a></li><li class="dropdown-item"><!----> <a href="/study/zh/webpack/" class="nav-link">Webpack</a></li><li class="dropdown-item"><!----> <a href="/study/zh/nodejs/" class="nav-link">nodejs</a></li><li class="dropdown-item"><!----> <a href="/study/zh/interface/Yuedu.html" class="nav-link">悦读管理后台</a></li><li class="dropdown-item"><!----> <a href="/study/zh/interface/BlackMarket.html" class="nav-link">BlackMarket</a></li><li class="dropdown-item"><!----> <a href="/study/zh/interface/TouTiao.html" class="nav-link">TouTiao</a></li></ul></div></div> <a href="https://github.com/jasonandjay/study" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/study/zh/standard/Start.html" class="nav-link">快速搭建开发环境</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">算法</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/zh/algorithm/Charpter4.html" class="nav-link">编程基本功</a></li><li class="dropdown-item"><!----> <a href="/study/zh/algorithm/Charpter5.html" class="nav-link">数学趣题(一)</a></li><li class="dropdown-item"><!----> <a href="/study/zh/algorithm/Charpter6.html" class="nav-link">数学趣题(二)</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">项目相关</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/zh/standard/Standard.html" class="nav-link">前端规范</a></li><li class="dropdown-item"><!----> <a href="/study/zh/standard/Project.html" class="nav-link">项目流程</a></li><li class="dropdown-item"><!----> <a href="/study/zh/standard/Cooperation.html" class="nav-link">前后端交互</a></li><li class="dropdown-item"><!----> <a href="/study/zh/standard/Compatibility.html" class="nav-link">移动端兼容问题</a></li><li class="dropdown-item"><!----> <a href="/study/zh/standard/Improve.html" class="nav-link">项目优化</a></li><li class="dropdown-item"><!----> <a href="/study/zh/standard/Cache.html" class="nav-link">浏览器缓存</a></li><li class="dropdown-item"><!----> <a href="/study/zh/standard/Spa.html" class="nav-link">单页面应用</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">知名公司面试题</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/zh/interview/index.html" class="nav-link">面试必看</a></li><li class="dropdown-item"><!----> <a href="/study/zh/interview/ali.html" class="nav-link">阿里巴巴</a></li><li class="dropdown-item"><!----> <a href="/study/zh/interview/longhu.html" class="nav-link">龙湖地产</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">知识点笔记</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/study/zh/interface/Mind.html" class="nav-link">在线思维导图</a></li><li class="dropdown-item"><!----> <a href="/study/zh/javascript/" class="nav-link router-link-active">JavaScript</a></li><li class="dropdown-item"><!----> <a href="/study/zh/vue/" class="nav-link">Vue</a></li><li class="dropdown-item"><!----> <a href="/study/zh/react/" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/study/zh/miniapp/" class="nav-link">小程序</a></li><li class="dropdown-item"><!----> <a href="/study/zh/webpack/" class="nav-link">Webpack</a></li><li class="dropdown-item"><!----> <a href="/study/zh/nodejs/" class="nav-link">nodejs</a></li><li class="dropdown-item"><!----> <a href="/study/zh/interface/Yuedu.html" class="nav-link">悦读管理后台</a></li><li class="dropdown-item"><!----> <a href="/study/zh/interface/BlackMarket.html" class="nav-link">BlackMarket</a></li><li class="dropdown-item"><!----> <a href="/study/zh/interface/TouTiao.html" class="nav-link">TouTiao</a></li></ul></div></div> <a href="https://github.com/jasonandjay/study" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav> <div class="carbon-ads"></div> <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>javaScript</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/study/zh/javascript/" class="sidebar-link">初探 JavaScript 部分</a></li><li><a href="/study/zh/javascript/dataType.html" class="active sidebar-link">数据类型</a></li><li><a href="/study/zh/javascript/functions.html" class="sidebar-link">函数</a></li><li><a href="/study/zh/javascript/getDoms.html" class="sidebar-link">DOM</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="数据类型"><a href="#数据类型" aria-hidden="true" class="header-anchor">#</a> 数据类型</h1> <p>1、ECMAScript 数据类型：5 种基本数据类型(简单数据类型或原始类型) 和 1 种复杂数据类型</p> <p>5 种基本数据类型：</p> <div class="language- extra-class"><pre class="language-text"><code>    undefined 未定义 10:22 2018/8/30 类型
+    null 空类型
+    boolean 布尔类型
+    number 数值型
+    string 字符串类型
+</code></pre></div><p>1 种复杂数据类型：</p> <div class="language- extra-class"><pre class="language-text"><code>    object —— 对象类型
+</code></pre></div><ul><li><p>栈内存和堆内存</p> <p><strong>栈内存</strong>:5 种基本数据类型的值保存在栈内存中</p> <p><strong>堆内存</strong>:对象类型的值保存在堆内存中</p></li> <li><p>Undefined -- 未定义类型 （就保存一个值）</p> <p>Undefined 类型只有一个值，即特殊的 undefined。</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>  1)使用 var 声明变量但未赋值(未初始化)时，这个变量的值就是 undefined。检测其类型也是 undefined。
+    var a;
+    console.log(a);//a=undefined
+    console.log(typeof a);//&quot;undefined&quot;
+
+  注意：一般不需要显示的将变量设置为 undefined。
+    var a = undefined;
+    var a;//undefined
+
+  2)变量从未定义过 ，他的类型为 undefined ，值报错。
+    console.log(e); //报错 e is not defined
+    console.log(typeof e);//&quot;undefined&quot;（相当于隐式声明了个 e 但没有报错）
+</code></pre></div><ul><li>Null -- 空类型 （就保存一个值）</li></ul> <p>Null 类型是第二个只有一个值的类型，这个特殊值是 null。null 值表示一个空对象指针。
+Null 是特殊的对象类型：object</p> <div class="language- extra-class"><pre class="language-text"><code>    var  car = null;
+    console.log(car);//null
+    console.log(typeof car);//&quot;object&quot;
+</code></pre></div><p>注意:实际上 undefined 值是派生自 null 值的，因此 ECMA-262 规定对它们的相等性测试要返回 true。</p> <p>alert(undefined == null); //true 真</p> <ul><li>Boolean -- 布尔类型</li></ul> <p>Boolean 类型是 ECMAScript 中使用得最多的一种类型,用于表示真假的数据类型。</p> <p>转 boolean 值为 false 的 6 个</p> <div class="language- extra-class"><pre class="language-text"><code>null false NAN undelined &quot;&quot; 0 除了这 6 个其他转 boolean 为真
+</code></pre></div><p>Boolean 类型只有两个值：true(真) \ false(假)。</p> <div class="language- extra-class"><pre class="language-text"><code>    var flag = true;//false
+    console.log(flag);//true
+    console.log( typeof(flag) );//&quot;boolean&quot;
+</code></pre></div><ul><li><p>Number -- 数值类型 分为整数和浮点数</p> <ul><li><p>整数 100、22、11、3</p></li> <li><p>浮点数值(有些语言中被称为双精度数值) 4.522 3.1415926</p> <pre><code>  浮点数值的最高精度是17位小数。特殊：0.1+0.2=0.30000000000000004
+</code></pre></li></ul> <p>数值类型中一种特殊的数值: NaN: not a Number 不是一个数字==非数值 特殊的数值类型（检测 NaN 的数据类型返回 number）</p> <pre><code>  ==表示判断     =表示赋值        ===表示全等
+
+  表示一个本来要返回数值的操作数未返回数值的情况。
+
+  console.log( 5 - &quot;hello&quot; );//NaN
+</code></pre> <p>NaN 特点： 1)任何涉及 NaN 的操作都会返回 NaN。 NaN + 4 // NaN 2)</p> <p><strong>NaN 与任何值都不相等，包括 NaN 本身</strong></p> <div class="language- extra-class"><pre class="language-text"><code>alert( NaN == NaN ) //false 自我否定
+</code></pre></div></li></ul> <p>isNaN(参数 n)</p> <p>判断参数 n 是否是&quot;非数值&quot;。如果是数值返回 false,不是数值返回 true;</p> <p>说明：isNaN()在接收到一个值之后，会尝试将这个值转换为数值。</p> <div class="language- extra-class"><pre class="language-text"><code>
+    alert(isNaN(NaN)); //true
+    alert(isNaN(10)); //false(10是一个数值)
+    alert(isNaN(&quot;10&quot;)); //false(可以被转换成数值10)
+    alert(isNaN(&quot;hello&quot;)); //true(不能转换成数值)
+    alert(isNaN(true)); //false(可以被转换成数值1)
+
+</code></pre></div><ul><li><p>String -- 字符串类型 （存放在堆内存当中）</p> <p>字符串可以由双引号或者单引号表示。</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>  var str = &quot;hello world&quot;;
+  var str = 'hello world';
+</code></pre></div><p>数据类型包含一些特殊的字符字面量，也叫转义序列(字符)，用于表示非打印字符</p> <pre><code>    \n  换行
+    \t  制表
+    \b  空格
+    \r  回车
+    \f  换页
+</code></pre> <p>查看字符串的长度：length 属性</p> <div class="language- extra-class"><pre class="language-text"><code>
+var str = &quot;hello world&quot;;
+console.log(str.length);//11
+
+</code></pre></div><p>查看字符串相应位置的字符。</p> <div class="language- extra-class"><pre class="language-text"><code>
+var str = &quot;hello world&quot;;
+console.log(str[1]);//e
+
+</code></pre></div><ul><li>Object -- 类型 ：ECMAScript 中的对象其实就是一组数据和功能的集合</li></ul> <div class="language- extra-class"><pre class="language-text"><code>
+var o = {}; \\对象字面量方法创建
+
+var o = new Object(); \\构造函数方法创建
+
+</code></pre></div><p>2、typeof 操作符</p> <p>作用:检测变量的数据类型 返回结果都是 string 类型</p> <p>typeof 两种使用法:</p> <pre><code>typeof 变量名
+
+typeof(变量名)
+</code></pre> <p>可能返回以下字符串: 少了个 null 多了个 function（函数）</p> <pre><code>&quot;undefined&quot; ==&gt;  如果这个值未定义
+&quot;boolean&quot;   ==&gt;  如果这个值是布尔值
+&quot;number&quot;    ==&gt;  如果这个值是数值
+&quot;string&quot;    ==&gt;  如果这个值是字符串
+&quot;object&quot;    ==&gt;  如果这个值是对象或null
+&quot;function&quot;  ==&gt;  如果这个值是函数
+</code></pre> <p>数据类型有哪些?</p> <p>5 种基本数据类型</p> <div class="language- extra-class"><pre class="language-text"><code>undefined null boolean number string
+</code></pre></div><p>1 种复杂数据类型  object</p> <p>typeof 操作符会返回哪些值?</p> <div class="language- extra-class"><pre class="language-text"><code>&quot;undefined&quot; &quot;number&quot; &quot;boolean&quot; &quot;string&quot; &quot;object&quot; &quot;function&quot;
+</code></pre></div></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/jasonandjay/study/edit/master/src/zh/javascript/dataType.md" target="_blank" rel="noopener noreferrer">帮助我们改进内容</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/study/zh/javascript/" class="prev router-link-active">
+          初探 JavaScript 部分
+        </a></span> <span class="next"><a href="/study/zh/javascript/functions.html">
+          函数
+        </a>
+        →
+      </span></p></div> <div class="bsa-cpc-wrapper"><div class="bsa-cpc"></div></div></div> <!----></div></div>
+    <script src="/study/assets/js/app.032c6679.js" defer></script><script src="/study/assets/js/40.9f659595.js" defer></script>
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c3446600de53c605ba4f6c792e47dff9";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </body>
+</html>
