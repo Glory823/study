@@ -181,7 +181,7 @@ module.exports = {
             }
           ],
           "/zh/nodejs/": [
-            { title: "nodejs知识点", children: ["", "gulp", "http"] }
+            { title: "nodejs知识点", children: ["", "gulp", "http","jsBridge"] }
           ],
           "/zh/javascript/": [
             {
