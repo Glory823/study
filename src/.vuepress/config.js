@@ -79,7 +79,8 @@ module.exports = {
               { text: "移动端兼容问题", link: "/zh/standard/Compatibility.md" },
               { text: "项目优化", link: "/zh/standard/Improve.md" },
               { text: "浏览器缓存", link: "/zh/standard/Cache.md" },
-              { text: "单页面应用", link: "/zh/standard/Spa.md" }
+              { text: "单页面应用", link: "/zh/standard/Spa.md" },
+              { text: '网络安全', link: '/zh/standard/Security.md' }
             ]
           },
           {
@@ -87,7 +88,7 @@ module.exports = {
             items: [
               { text: "面试必看", link: "/zh/interview/index.md" },
               { text: "阿里巴巴", link: "/zh/interview/ali.md" },
-              { text: "龙湖地产", link: "/zh/interview/longhu.md" }
+              // { text: "龙湖地产", link: "/zh/interview/longhu.md" }
             ]
           },
           {
@@ -100,9 +101,9 @@ module.exports = {
               { text: "小程序", link: "/zh/miniapp/" },
               { text: "Webpack", link: "/zh/webpack/" },
               { text: "nodejs", link: "/zh/nodejs/" },
-              { text: "悦读管理后台", link: "/zh/interface/Yuedu.md" },
-              { text: "BlackMarket", link: "/zh/interface/BlackMarket.md" },
-              { text: "TouTiao", link: "/zh/interface/TouTiao.md" }
+              // { text: "悦读管理后台", link: "/zh/interface/Yuedu.md" },
+              // { text: "BlackMarket", link: "/zh/interface/BlackMarket.md" },
+              // { text: "TouTiao", link: "/zh/interface/TouTiao.md" }
             ]
           }
           // {
@@ -176,7 +177,8 @@ module.exports = {
                 "小程序事件",
                 "小程序路由",
                 "小程序组件",
-                "小程序组件化"
+                "小程序组件化",
+                "uniApp"
               ]
             }
           ],
