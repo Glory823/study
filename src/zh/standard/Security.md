@@ -80,7 +80,7 @@ Cookie是按照Domain存储的，当请求一个网站的时候，浏览器会�
 5. 浏览器在接收到这些攻击性代码后，根据网站B的请求，在用户不知情的情况下携带Cookie信息，向网站A发出请求。网站A并不知道该请求其实是由B发起的，所以会根据用户C的Cookie信息以C的权限处理该请求，导致来自网站B的恶意代码被执行。 
 
 ### 图解流程
-![图解CSRF](/study/security/csrf.png)
+![图解CSRF](/.vuepress/public/security/csrf.png)
 
 #### 防范措施
 CSRF攻击是攻击者利用用户的身份(Cookie)操作用户帐户的一种攻击方式，我们可以利用修改登录态的位置（由cookie中放到地址栏或者自定义请求头部）和refer的判断来防御CSRF攻击，由前端和服务端配合一起解决CSRF攻击。
